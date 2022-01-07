@@ -1,5 +1,6 @@
-export const PrimaryFont = "'Kulim Park, sans-serif";
-
+export const PrimaryFont = "Kulim Park, sans-serif";
+export const SecondaryFont = "Monda, sans-serif";
+// export const PrimaryFont = "Tahoma, sans-serif";
 export const typeScale = {
   header1: "4.209rem",
   header2: "3.157rem",

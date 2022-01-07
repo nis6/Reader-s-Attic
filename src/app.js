@@ -7,7 +7,6 @@ import { GlobalStyle } from "./utilities";
 const App = () => {
   return (
     <div>
-      <GlobalStyle />
       <Navbar />
       Hello
       <div style={{ width: "90vw", position: "absolute", bottom: "20vh" }}>
