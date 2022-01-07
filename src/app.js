@@ -10,7 +10,12 @@ const App = () => {
       <GlobalStyle />
       <Navbar />
       Hello
-      <img src={home_illustration.home_illust}></img>
+      <div style={{ width: "90vw", position: "absolute", bottom: "20vh" }}>
+        <img
+          src={home_illustration.home_illust}
+          style={{ width: "100%" }}
+        ></img>
+      </div>
     </div>
   );
 };

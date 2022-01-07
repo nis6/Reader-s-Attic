@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components";
 import { PrimaryFont } from "./typography";
 import { normalize } from "polished";
 import { defaultTheme } from "./theme";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     ${normalize()}
@@ -15,10 +15,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     body{
         margin:0;
+        background: ${defaultTheme.bgColor};
+        color: ${defaultTheme.textColor};
         font-family: ${PrimaryFont};
-        background:${defaultTheme.bgColor};
-        display:flex;
-        flex-direction:column;
-        align-items:center;
     }
 `;
