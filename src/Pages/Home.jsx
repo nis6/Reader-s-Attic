@@ -1,11 +1,9 @@
-import ReactDOM from "react-dom";
-import React, { useState } from "react";
 import { Navbar } from "./components";
-import { home_illustration, home_illustrations } from "./assets";
-import { GlobalStyle } from "./utilities";
+import { home_illustrations } from "./assets";
 import styled from "styled-components";
 import { defaultTheme } from "./utilities";
-import colors from "./utilities/Colors";
+import colors from "./utilities";
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -27,10 +25,9 @@ const MainText = styled.div`
   letter-spacing: normal;
 `;
 
-const App = () => {
+const Home = () => {
   return (
     <div>
-      <GlobalStyle />
       <Navbar />
       <TextContainer>
         <MainHeader>
@@ -55,9 +52,8 @@ const App = () => {
       >
         <img src={home_illustrations.home_illust} style={{ width: "110%" }} />
       </div>
-      ;
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default Home;

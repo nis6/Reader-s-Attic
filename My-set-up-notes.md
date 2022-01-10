@@ -1,10 +1,25 @@
-##### Reasearch and Random notes
+### Links
 
-<br/>
+### Set Up
 
-### font Import Error
+- configured package.json file
+- parcel package bundler
+- eslint configuration
+- prettier settings
 
--
+### Built with
+
+- Figma Designs
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- React-Router
+- [Styled Components](https://styled-components.com/) - For styles
+- Polished
+
+## Tools
 
 ### APIs
 
@@ -12,28 +27,6 @@
 - openlibrary
 - google books API
 - google books embedded viewwer API
-
-### Tools found along the way
-
-- react-responsive?
-- to upload figma on project repo?
-- polished for normalise()
-
-### Errors and solutions
-
-- why use _:after and _:before in css for border-box?
-- extensions give you live feedbacks etc but packages let
-- you have to provide script tag with app file inside index.html, which otherwise create-react-app injects inside it.
-
-## Modules & Organisation
-
-- organise by module: feature first->function second
-- organise by type: function first->feature second
-- In ES6, having an index.js file in a folder lets you perform an import from the folder implicitly without specifying the index.js in the import statement – just like how web servers will serve up the index.html in a folder without you needing to explicitly put the index.html in the URL.
-
-## Components
-
--
 
 ### Eslint
 
