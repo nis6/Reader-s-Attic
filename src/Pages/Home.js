@@ -1,8 +1,8 @@
-import { Navbar } from "./components";
-import { home_illustrations } from "./assets";
+import React from "react";
+import { home_illustrations } from "../assets";
 import styled from "styled-components";
-import { defaultTheme } from "./utilities";
-import colors from "./utilities";
+import Navbar from "../components/Navbar/Navbar";
+import { defaultTheme, colors } from "../utilities";
 
 const TextContainer = styled.div`
   display: flex;
@@ -24,7 +24,6 @@ const MainText = styled.div`
   word-spacing: normal;
   letter-spacing: normal;
 `;
-
 const Home = () => {
   return (
     <div>

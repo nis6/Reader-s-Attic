@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
   mainblue: "#0D1F22",
   ivory100: "#F5F9E9",
   pine: "#0B7A75",
@@ -15,5 +15,3 @@ const colors = {
   beige200: "#D9D4CA",
   ivory200: "#818C85",
 };
-
-export default colors;

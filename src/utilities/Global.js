@@ -3,7 +3,7 @@ import { normalize } from "polished";
 import { defaultTheme } from "./theme";
 import styled, { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     ${normalize()}
     html{
         font-size:12px;
@@ -37,3 +37,5 @@ export const Logo = styled.div`
   margin-bottom: 0;
   padding: 0;
 `;
+
+export default GlobalStyle;

@@ -2,6 +2,7 @@ import React from "react";
 import { Logo } from "../../utilities";
 import { Nav, NavbarContainer, IconContainer } from "./Navbar.element";
 import { home_illustrations } from "../../assets";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (

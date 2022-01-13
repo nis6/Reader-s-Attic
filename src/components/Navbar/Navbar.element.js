@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { defaultTheme } from "../../utilities";
-import { Container } from "../../utilities";
-
-console.log("theme loaded + ", defaultTheme);
 
 export const Nav = styled.nav`
   color: ${defaultTheme.textColor};

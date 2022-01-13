@@ -6,6 +6,8 @@
 - organise by type: function first->feature second
 - In ES6, having an index.js file in a folder lets you perform an import from the folder implicitly without specifying the index.js in the import statement – just like how web servers will serve up the index.html in a folder without you needing to explicitly put the index.html in the URL.
 
+## Project Structure
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -27,14 +29,22 @@
 
 ### ERRORS & Questions
 
+- we can avoid error by avoiding type="module" for parcel.
 - A font error bcz of extra '
 - react-responsive?
 - to upload figma on project repo?
 - ES6 doesn't allow export default const
-- what provides the "/Home" syntax [no need to use .js]
+- what provides the "/Home" syntax [no need to use .js] [issue-2]
+- [what is this index.js entry point for modules](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
+- Dependency specifiers [issue-2]
+- Directory structure [issue-2]
 
 ### Learnings
 
+- A package root is a directory with a package.json
+- multiple import named import destructured inside { }
+- To use JSX, need to import React from 'react' because under the hood JSX is using React.createElement,
+- also FB doesn't recommend using .jsx ?
 - one can create a single module concentrating various exports from various modules.
 - polished for normalise()
 - React routers, matchers, navigators
@@ -49,6 +59,8 @@
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
+
+[React App book](https://survivejs.com/react/introduction/)
 
 ## Author
 
