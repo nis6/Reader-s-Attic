@@ -1,17 +1,17 @@
 import React from "react";
-import { Logo } from "../../utilities";
 import { Nav, NavbarContainer, IconContainer } from "./Navbar.element";
 import { home_illustrations } from "../../assets";
-import { NavLink } from "react-router-dom";
+import NavLogo from "../Logo.jsx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <Nav>
         <NavbarContainer>
-          <Logo>
-            <img src={home_illustrations.logo} style={{ width: "100%" }} />
-          </Logo>
+          <Link to="/">
+            <NavLogo />
+          </Link>
           <IconContainer>
             <img src={home_illustrations.themestar} style={{ width: "3rem" }} />
             <img src={home_illustrations.menu} style={{ width: "3rem" }} />

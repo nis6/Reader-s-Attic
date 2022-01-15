@@ -1,17 +1,22 @@
-import React from "react";
+import * as React from "react";
 import GlobalStyle from "./utilities/Global";
-import Home from "./Pages/Home";
-import ReactDOM from "react-dom";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import Navbar from "./components/Navbar/Navbar";
+import Home from "./Pages/Home.jsx";
+import {
+  BrowserRouter as Router,
+  browserHistory,
+  Route,
+  Routes,
+} from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <GlobalStyle />
-      <Home />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;

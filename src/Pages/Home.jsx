@@ -1,7 +1,7 @@
 import React from "react";
 import { home_illustrations } from "../assets";
 import styled from "styled-components";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar.jsx";
 import { defaultTheme, colors } from "../utilities";
 
 const TextContainer = styled.div`
@@ -36,7 +36,7 @@ const Home = () => {
           <span style={{ color: colors.beige100 }}>C</span>
         </MainHeader>
         <MainText>
-          Here’s is your space-ship, takes you to a unique digital space. Where
+          Here is your space-ship, takes you to a unique digital space. Where
           you zone <br />
           into a world full of words & tales.
         </MainText>
@@ -46,10 +46,10 @@ const Home = () => {
           width: "90vw",
           position: "absolute",
           bottom: "10vh",
-          marginLeft: "-12rem",
+          marginLeft: "-8rem",
         }}
       >
-        <img src={home_illustrations.home_illust} style={{ width: "110%" }} />
+        <img src={home_illustrations.home_illustra} style={{ width: "110%" }} />
       </div>
     </div>
   );

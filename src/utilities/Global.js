@@ -6,7 +6,7 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     ${normalize()}
     html{
-        font-size:12px;
+        font-size:10px;
         box-sizing: border-box;
         margin:0;
     }
@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
         background: ${defaultTheme.bgColor};
         color: ${defaultTheme.textColor};
         font-family: ${PrimaryFont};
+    }
+    @media (min-width: 1200px) {
+          html{
+            font-size: 16px;
+          }    
     }
 `;
 
