@@ -29,6 +29,7 @@
 
 ### ERRORS & Questions
 
+- Changed the <Switch> to <Router> error resolved.
 - we can avoid error by avoiding type="module" for parcel.
 - A font error bcz of extra '
 - react-responsive?

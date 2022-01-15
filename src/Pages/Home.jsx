@@ -12,6 +12,7 @@ const TextContainer = styled.div`
   width: 30rem;
   margin: 3rem;
   margin-left: 12rem;
+  padding-bottom: 5rem;
 `;
 
 const MainHeader = styled.div`
@@ -28,28 +29,40 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <TextContainer>
-        <MainHeader>
-          Reader's A<span style={{ color: colors.indianred }}>T</span>
-          <span style={{ color: colors.pine }}>T</span>
-          <span style={{ color: colors.marigold }}>I</span>
-          <span style={{ color: colors.beige100 }}>C</span>
-        </MainHeader>
-        <MainText>
-          Here is your space-ship, takes you to a unique digital space. Where
-          you zone <br />
-          into a world full of words & tales.
-        </MainText>
-      </TextContainer>
       <div
         style={{
-          width: "90vw",
-          position: "absolute",
-          bottom: "10vh",
-          marginLeft: "-8rem",
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
+          top: "8vh",
         }}
       >
-        <img src={home_illustrations.home_illustra} style={{ width: "110%" }} />
+        <TextContainer>
+          <MainHeader>
+            Reader's A<span style={{ color: colors.indianred }}>T</span>
+            <span style={{ color: colors.pine }}>T</span>
+            <span style={{ color: colors.marigold }}>I</span>
+            <span style={{ color: colors.beige100 }}>C</span>
+          </MainHeader>
+          <MainText>
+            Here is your space-ship, takes you to a unique digital space. Where
+            you zone <br />
+            into a world full of words & tales.
+          </MainText>
+        </TextContainer>
+        <div
+          style={{
+            width: "90vw",
+            position: "relative",
+            bottom: "25vh",
+            marginLeft: "-5rem",
+          }}
+        >
+          <img
+            src={home_illustrations.home_illustra}
+            style={{ width: "110%" }}
+          />
+        </div>
       </div>
     </div>
   );
