@@ -6,11 +6,14 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     ${normalize()}
     html{
-        font-size:10px;
+        font-size:12px;
         box-sizing: border-box;
         margin:0;
-        overflow: hidden;
+        overflow-x: hidden;
     }
+    ::-webkit-scrollbar {
+    display: none;
+}
     *, *:before, *:after{
         box-sizing: border-box;
     }
@@ -20,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${defaultTheme.textColor};
         font-family: ${PrimaryFont};
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1000px) {
           html{
             font-size: 16px;
           }    

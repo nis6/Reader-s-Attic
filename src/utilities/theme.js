@@ -1,9 +1,10 @@
 import { colors } from "./Colors";
-import { PrimaryFont, SecondaryFont } from "./typography";
+import { PrimaryFont, SecondaryFont, typeScale } from "./typography";
 
 export const defaultTheme = {
   bgColor: colors.mainblue,
   textColor: colors.ivory100,
+  typeScale,
   PrimaryFont,
   SecondaryFont,
   status: {
