@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import { colors } from "../utilities/Colors.js";
-
 import {
   TextContainer,
   MainHeader,

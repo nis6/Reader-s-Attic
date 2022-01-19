@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { defaultTheme } from "../../utilities";
-import { home_illustrations } from "../../assets";
 
 export const Nav = styled.nav`
   position: relative;
@@ -24,36 +23,35 @@ export const NavbarContainer = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  width: 7rem;
-  height: 2.5rem;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  align-self: flex-end;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  text-align: end;
+  width: 50vw;
+  opacity: 0.6;
+  @media screen and (min-width: 700px) {
+    width: 30vw;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 20vw;
+  }
 `;
 
 export const Blob = styled.div`
   position: absolute;
-  top: -2rem;
-  right: -5rem;
-  width: 70vw;
-  height: 25vh;
-  background-image: url(${home_illustrations.blob});
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.6;
-  @media screen and (min-width: 700px) {
-    width: 40vw;
-    height: 20vh;
-  }
-  @media screen and (min-width: 1000px) {
-    right: -20%;
-    width: 40vw;
-    height: 30vh;
-  }
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  width: max-content;
+  height: max-content;
+  opacity: 0.8;
 `;
 
 export const Button = styled.button`
   background: transparent;
   border: none;
 `;
+//  border: solid 1px white;
+//   align-items: flex-end;

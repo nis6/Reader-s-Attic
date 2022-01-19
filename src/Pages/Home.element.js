@@ -25,6 +25,7 @@ export const TextContainer = styled.div`
 `;
 
 export const MainHeader = styled.div`
+  z-index: 9;
   font-size: 6rem;
   @media screen and (max-width: 780px) {
     padding-left: 3rem;
@@ -38,6 +39,7 @@ export const MainHeader = styled.div`
   }
 `;
 export const MainText = styled.div`
+  z-index: 9;
   font-size: 1.2rem;
   font-family: ${defaultTheme.SecondaryFont};
   line-height: 190%;
@@ -58,6 +60,7 @@ export const Illustration = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 9;
   @media (min-width: 700px) {
     background-image: url(${home_illustrations.tab_illustra});
     margin-left: 0rem;
