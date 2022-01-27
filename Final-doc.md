@@ -29,6 +29,8 @@
 
 ### ERRORS & Questions
 
+- Why can't I use just a variable to toggle the navmenu
+  - React components will only re-render when there are changes to props or state
 - Changed the <Switch> to <Router> error resolved.
 - we can avoid error by avoiding type="module" for parcel.
 - A font error bcz of extra '
@@ -55,13 +57,29 @@
 - why use _:after and _:before in css for border-box?
 - extensions give you live feedbacks etc but packages let you have to provide script tag with app file inside index.html, which otherwise create-react-app injects inside it.
 
+## Embedded Viewer API
+
+- include the API Loader using a script tag.
+- create a div element named "viewerCanvas" to hold the viewer.
+- write a JavaScript function to create a "viewer" object.
+- load the book using its unique identifier (in this case ISBN:0738531367).
+- use google.books.setOnLoadCallback to call initialize when the API has fully loaded.
+- an optional language parameter to your google.books.load call.
+- instance of default viewer object
+- The viewer implicitly uses the size of the container to size itself.
+- The load() (in viewer.load()) method requires an identifier value, which tells the API what book to show.
+- book identifier take isbn number or book preview url
+- Handling failed initializations : viewer.load('ISBN:1234', alertNotFound);
+- viewer.nextPage(); to turn next page after sometime
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
-[React App book](https://survivejs.com/react/introduction/)
+- [React App book](https://survivejs.com/react/introduction/)
+- [Embedded Viewer API](https://developers.google.com/books/docs/viewer/developers_guide)
 
 ## Author
 

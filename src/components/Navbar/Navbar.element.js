@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { defaultTheme } from "../../utilities";
+import { colors, defaultTheme } from "../../utilities";
 
 export const Nav = styled.nav`
   position: relative;
@@ -46,7 +46,6 @@ export const Blob = styled.div`
   right: 0;
   width: max-content;
   height: max-content;
-  opacity: 0.8;
 `;
 
 export const Button = styled.button`

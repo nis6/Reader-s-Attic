@@ -18,6 +18,7 @@
 - React-Router
 - [Styled Components](https://styled-components.com/) - For styles
 - Polished
+- Google Books API
 
 ## Tools
 

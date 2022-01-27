@@ -60,7 +60,7 @@ export const Illustration = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 9;
+  z-index: -1;
   @media (min-width: 700px) {
     background-image: url(${home_illustrations.tab_illustra});
     margin-left: 0rem;

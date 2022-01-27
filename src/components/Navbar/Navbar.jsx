@@ -10,8 +10,13 @@ import { home_illustrations } from "../../assets";
 import NavLogo from "../Logo.jsx";
 import { Link } from "react-router-dom";
 import { Sidebar } from "../BlobMenu/BlobMenu";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  function toggleMenu() {
+    setClick(!click);
+  }
   return (
     <div>
       <Nav>
@@ -23,7 +28,11 @@ const Navbar = () => {
             <img
               src={home_illustrations.blob}
               alt="blob"
-              style={{ width: "140%", position: "absolute" }}
+              style={{
+                width: "140%",
+                position: "absolute",
+                zIndex: "999",
+              }}
             />
             <IconContainer>
               <Button Button>
@@ -32,10 +41,12 @@ const Navbar = () => {
                   style={{ width: "2.5rem" }}
                 />
               </Button>
-              <Button>
+              <Button onClick={toggleMenu}>
                 <img
                   src={home_illustrations.menu}
-                  style={{ width: "2.5rem" }}
+                  style={{
+                    width: "2.5rem",
+                  }}
                 />
               </Button>
             </IconContainer>
