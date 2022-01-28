@@ -9,4 +9,4 @@ An online library app, with custom styled-components and design system+figma.
 
 The documenation of this project is in progress as well, but you can still watch the progress 
 - check out [Final-Doc.md](https://github.com/nis6/Reader-s-Attic/blob/master/Final-doc.md)
-- also Github issues of this project where I keep track of "issues" and errors.
+- also [Github issues](https://github.com/nis6/Reader-s-Attic/issues) of this project where I keep track of "issues" and errors.
