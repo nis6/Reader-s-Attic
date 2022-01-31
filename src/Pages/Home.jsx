@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import { colors } from "../utilities/Colors.js";
+import Socials from "./../components/socials.jsx";
+import GlobalStyle from "../utilities/Global.js";
 import {
   TextContainer,
   MainHeader,
@@ -32,6 +34,7 @@ const Home = () => {
             unique digital space. Where you zone <br /> into a world full of
             words & tales.
           </MainText>
+          <Socials />
         </TextContainer>
         <Illustration />
       </div>

@@ -25,32 +25,30 @@ const Navbar = () => {
             <NavLogo />
           </Link>
           <Blob>
-            <img
+            {/* <img
               src={home_illustrations.blob}
               alt="blob"
               style={{
                 width: "140%",
                 position: "absolute",
-                zIndex: "999",
               }}
-            />
+            /> */}
             <IconContainer>
-              <Button Button>
+              <Button>
                 <img
                   src={home_illustrations.themestar}
                   style={{ width: "2.5rem" }}
                 />
               </Button>
-              <Button onClick={toggleMenu}>
+              <Button onClick={() => toggleMenu}>
                 <img
                   src={home_illustrations.menu}
-                  style={{
-                    width: "2.5rem",
-                  }}
+                  alt="Menu Bar"
+                  style={{ width: "2.5rem" }}
                 />
               </Button>
             </IconContainer>
-            <Sidebar />
+            {click ? <Sidebar /> : null}
           </Blob>
         </NavbarContainer>
       </Nav>

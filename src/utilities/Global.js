@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
     *, *:before, *:after{
         box-sizing: border-box;
     }
+    svg {
+    pointer-events: none;
+}
     body{
         margin:0;
         background: ${defaultTheme.bgColor};

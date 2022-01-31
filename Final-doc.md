@@ -72,6 +72,10 @@
 - Handling failed initializations : viewer.load('ISBN:1234', alertNotFound);
 - viewer.nextPage(); to turn next page after sometime
 
+### Socials
+
+- `<Link>` is relative while `<a>` is not
+
 ### Continued development
 
 ...

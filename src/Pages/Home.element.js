@@ -1,26 +1,39 @@
 import styled from "styled-components";
 import { defaultTheme } from "../utilities";
 import { home_illustrations } from "../assets";
+
 export const TextContainer = styled.div`
+  z-index: -10;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   top: 6rem;
   width: 30rem;
   margin-left: 8rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-bottom: 3rem;
-  @media (max-width: 780px) {
-    width: 90vw;
+  @media screen and (max-width: 780px) {
+    /* align-self: center;
+    width: 80%;
+    height: max-content;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1rem; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   @media screen and (max-width: 380px) {
+    display: flex;
+    width: 100%;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
     align-self: center;
     margin: 0 3rem;
+    padding: 0 3rem;
   }
 `;
 
@@ -28,13 +41,12 @@ export const MainHeader = styled.div`
   z-index: 9;
   font-size: 6rem;
   @media screen and (max-width: 780px) {
-    padding-left: 3rem;
-    padding-right: 1rem;
-    margin: 1rem 0;
-    flex-basis: 30%;
+    /* margin: 1rem 0;
+    flex-basis: 30%; */
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
   }
   @media screen and (max-width: 380px) {
-    padding: 0 2rem;
     font-size: 5rem;
   }
 `;
@@ -50,7 +62,6 @@ export const MainText = styled.div`
     margin: 0;
   }
   @media screen and (max-width: 380px) {
-    padding: 0 2rem;
   }
 `;
 export const Illustration = styled.div`
