@@ -32,6 +32,7 @@ export const Sidebar = () => {
           display: " grid",
           gridTemplateRows: "1fr 1fr",
           gridTemplateColumns: "1fr 1fr",
+          padding: "3rem",
         }}
       >
         <div
