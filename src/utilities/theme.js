@@ -5,7 +5,7 @@ export const defaultTheme = {
   bgColor: colors.mainblue,
   textColor: colors.ivory100,
   typeScale,
-  PrimaryFont,
+  PrimaryFont, //equiv to PrimaryFont: PrimaryFont,
   SecondaryFont,
   status: {
     notFoundColor: colors.beige200,

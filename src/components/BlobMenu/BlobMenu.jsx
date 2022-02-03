@@ -6,22 +6,16 @@ import { Link } from "react-router-dom";
 const MenuLink = styled(Link)`
   text-decoration: none;
   text-transform: capitalize;
-  color: #a4a3a4;
+  color: ${colors.grey};
   font-size: 1rem;
   &:hover {
     color: ${colors.ivory100};
-    transition: all 5ms ease;
+
     cursor: pointer;
   }
   @media (min-width: 700px) {
     font-size: 1rem;
   }
-`;
-//border collapse removes the effect of padding
-const Table = styled.table`
-  padding: 4rem;
-  padding-right: 2rem;
-  margin: 2rem;
 `;
 
 export const Sidebar = () => {
@@ -51,7 +45,7 @@ export const Sidebar = () => {
             borderBottom: `1px solid ${colors.marigold}`,
           }}
         >
-          <MenuLink to="/">Library</MenuLink>
+          <MenuLink to="/">Favourites</MenuLink>
         </div>
         <div
           style={{
@@ -60,7 +54,7 @@ export const Sidebar = () => {
             textAlign: "right",
           }}
         >
-          <MenuLink to="/">Register</MenuLink>
+          <MenuLink to="/search">Seacrh</MenuLink>
         </div>
         <div
           style={{

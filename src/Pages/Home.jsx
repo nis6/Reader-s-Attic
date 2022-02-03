@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import { colors } from "../utilities/Colors.js";
 import Socials from "./../components/socials.jsx";
-import GlobalStyle from "../utilities/Global.js";
+import { home_illustrations } from "../assets/index.js";
 import {
   TextContainer,
   MainHeader,
@@ -36,6 +36,9 @@ const Home = () => {
           </MainText>
           <Socials />
         </TextContainer>
+        {/* <a href="https://github.com/nis6">
+          <img src={home_illustrations.github} alt="" />
+        </a> */}
         <Illustration />
       </div>
     </div>

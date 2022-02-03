@@ -10,12 +10,18 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin:0;
         overflow-x: hidden;
+        user-select: none; 
+                @media screen and (min-width: 1000px) {
+    font-size: 16px;
+  }
     }
     ::-webkit-scrollbar {
     display: none;
 }
     *, *:before, *:after{
         box-sizing: border-box;
+        padding: 0;
+        margin: 0;
     }
     svg {
     pointer-events: none;
@@ -24,12 +30,7 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         background: ${defaultTheme.bgColor};
         color: ${defaultTheme.textColor};
-        font-family: ${PrimaryFont};
-    }
-    @media (min-width: 1000px) {
-          html{
-            font-size: 16px;
-          }    
+        font-family: ${PrimaryFont};  
     }
 `;
 
