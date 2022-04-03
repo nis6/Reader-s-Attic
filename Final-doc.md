@@ -57,6 +57,10 @@
 - CSS-in-JS : CSS composed of JS objects , not a featuer of react
 - why use _:after and _:before in css for border-box?
 - extensions give you live feedbacks etc but packages let you have to provide script tag with app file inside index.html, which otherwise create-react-app injects inside it.
+- Request method for dynamic fetch API calls
+- SCALING SVGs
+  - SVGs cant be resized using width directly in css if is has viewport and width and height are set, only the viewport will resize with width.
+  - or use transform: scale(2) [2 times increase] in the css style object
 
 ## Embedded Viewer API
 

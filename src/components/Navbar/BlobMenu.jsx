@@ -54,7 +54,7 @@ export const Sidebar = () => {
             textAlign: "right",
           }}
         >
-          <MenuLink to="/search">Seacrh</MenuLink>
+          <MenuLink to="/search">Search</MenuLink>
         </div>
         <div
           style={{

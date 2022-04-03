@@ -6,7 +6,6 @@ import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
 import { defaultTheme } from "../utilities/theme.js";
 import SearchBar from "../components/searchBar.jsx";
-import { position } from "polished";
 
 const Search = () => {
   return (

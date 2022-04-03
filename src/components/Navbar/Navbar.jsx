@@ -14,9 +14,8 @@ import {
 import { home_illustrations } from "../../assets";
 import NavLogo from "../Logo.jsx";
 import { Link } from "react-router-dom";
-import { Sidebar } from "../BlobMenu/BlobMenu";
+import { Sidebar } from "./BlobMenu";
 import { useState } from "react";
-import { colors } from "../../utilities";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

@@ -9,6 +9,7 @@ import menu from "./home/menue.svg";
 import themestar from "./home/themestar.svg";
 import blob from "./blob.svg";
 import bookShelf from "./bookshelf.svg";
+import bookimg from "./littlelife.jpg";
 
 export const home_illustrations = {
   home_illustra,
@@ -22,4 +23,5 @@ export const home_illustrations = {
   twitter,
   linkedin,
   bookShelf,
+  bookimg,
 };

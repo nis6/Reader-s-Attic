@@ -20,9 +20,9 @@ const LinkSocials = styled.a`
 const Socials = () => {
   return (
     <SocialContainer>
-      <a href="https://www.linkedin.com/in/nisha-chauhan-31197b17b/s">
+      <LinkSocials href="https://www.linkedin.com/in/nisha-chauhan-31197b17b/s">
         <img src={home_illustrations.linkedin} alt="linkedin-logo" />
-      </a>
+      </LinkSocials>
       <LinkSocials href="https://twitter.com/home">
         <img src={home_illustrations.twitter} alt="twitter-logo" />
       </LinkSocials>
