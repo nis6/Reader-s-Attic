@@ -5,7 +5,7 @@ import Socials from "./../components/socials.jsx";
 import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
 import { defaultTheme } from "../utilities/theme.js";
-import SearchBar from "../components/searchBar.jsx";
+import SearchBar from "../components/SearchBar.jsx";
 
 const Search = () => {
   return (
@@ -40,8 +40,8 @@ const Search = () => {
       </div>
       <div
         style={{
-          position: "absolute",
-          right: "90vw",
+          position: "fixed",
+          left: "1vw",
           bottom: "0",
         }}
       >

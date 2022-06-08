@@ -1,83 +1,24 @@
-import { colors } from "../utilities/Colors.js";
-import styled from "styled-components";
 import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import { useState } from "react";
-
-const Container = styled.div`
-  display: grid;
-  position: relative;
-  height: 18rem;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding: 1rem 2rem;
-  gap: 0.4rem 2rem;
-  border: solid 1px ${colors.ivory100};
-  margin: 2rem;
-`;
-
-const Preview = styled.button`
-  align-self: start;
-  width: 50%;
-  grid-row: 3 / span 1;
-  grid-column: 3 / span 1;
-  background: transparent;
-  border: solid 1px ${colors.ivory200};
-  border-radius: 0.7rem;
-  padding: 0.5rem 0.1rem;
-  color: ${colors.ivory200};
-
-  &:hover {
-    border-color: ${colors.ivory100};
-    color: ${colors.ivory100};
-  }
-  &:active {
-    padding: 0.6rem 0.2rem;
-    border-color: ${colors.ivory100};
-    color: ${colors.ivory100};
-  }
-  &:focus {
-    padding: 0.6rem 0.2rem;
-    border-color: ${colors.ivory100};
-    color: ${colors.ivory100};
-  }
-`;
-
-const BookmarkButton = styled.button`
-  position: absolute;
-  right: 1rem;
-  top: -0.1rem;
-  color: ${colors.beige200};
-  background: transparent;
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  &:hover {
-    color: ${colors.ivory100};
-    transform: scale(1.1);
-  }
-  &:active {
-    color: ${colors.indianred};
-  }
-  &:focus {
-    color: ${colors.indianred};
-  }
-`;
+import styled from "styled-components";
+import {
+  ResultsContainer,
+  Summary,
+  Preview,
+  BookmarkButton,
+  BookmarkButtonFilled,
+} from "./ResultCards.elements";
 
 function ResultCard(props) {
+  const [BookMarked, setBookMarked] = useState(false);
+  function toggleBookMark() {
+    setBookMarked(!BookMarked);
+  }
   return (
-    <Container>
-      <div
-        style={{
-          fontSize: "1.5rem",
-          gridRow: " 1/ span 1",
-          gridColumn: " 1/ span 1",
-          alignSelf: "end",
-        }}
-      >
+    <ResultsContainer>
+      <Title>
         <h4>{props.title}</h4>
-      </div>
+      </Title>
       <div
         style={{
           fontSize: "1.3rem",
@@ -107,20 +48,18 @@ function ResultCard(props) {
           }}
         />
       </div>
-      <div
-        style={{
-          gridRow: "1/ span 2",
-          gridColumn: "3/ span 2",
-          color: `${colors.ivory200}`,
-        }}
-      >
-        <p>{props.summary}</p>
-      </div>
+      <Summary>{props.summary}</Summary>
       <Preview>Preview</Preview>
-      <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
-        <BsBookmarkHeart size="1.8rem" />
-      </BookmarkButton>
-    </Container>
+      {BookMarked ? (
+        <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
+          <BsBookmarkHeart size="1.8rem" />
+        </BookmarkButton>
+      ) : (
+        <BookmarkButtonFilled type="submit" onClick={() => toggleBookMark()}>
+          <BsBookmarkHeartFill size="1.8rem" />
+        </BookmarkButtonFilled>
+      )}
+    </ResultsContainer>
   );
 }
 
