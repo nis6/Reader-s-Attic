@@ -3,8 +3,6 @@ import { defaultTheme } from "../utilities";
 import { home_illustrations } from "../assets";
 
 export const TextContainer = styled.div`
-  border: red 1px solid;
-  z-index: -10;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -39,7 +37,6 @@ export const TextContainer = styled.div`
 `;
 
 export const MainHeader = styled.div`
-  border: red 1px solid;
   z-index: 9;
   font-size: 6rem;
   @media screen and (max-width: 780px) {
@@ -53,7 +50,6 @@ export const MainHeader = styled.div`
   }
 `;
 export const MainText = styled.div`
-  border: red 1px solid;
   z-index: 9;
   font-size: 1.2rem;
   font-family: ${defaultTheme.SecondaryFont};
@@ -69,7 +65,6 @@ export const MainText = styled.div`
 `;
 
 export const Illustration = styled.div`
-  border: red 1px solid;
   width: 95vw;
   height: 30rem;
   background-image: url(${home_illustrations.mobile_illustra});

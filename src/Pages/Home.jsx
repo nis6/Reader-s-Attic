@@ -16,7 +16,6 @@ const Home = () => {
       <Navbar />
       <div
         style={{
-          border: "green solid 1px",
           marginTop: "8rem",
           display: "flex",
           flexDirection: "column",
@@ -37,9 +36,7 @@ const Home = () => {
           </MainText>
           <Socials />
         </TextContainer>
-        {/* <a href="https://github.com/nis6">
-          <img src={home_illustrations.github} alt="" />
-        </a> */}
+
         <Illustration />
       </div>
     </div>

@@ -65,10 +65,10 @@ const SearchBar = () => {
             onChange={(event) => setParams(event.target.value)}
             onBlur={(event) => setParams(event.target.value)}
           />
+          <SearchButton type="submit">
+            <BsSearch size="1.5rem" />
+          </SearchButton>
         </form>
-        <SearchButton type="submit">
-          <BsSearch size="1.5rem" />
-        </SearchButton>
       </SearchBarContainer>
       <Results books={books} />
     </SearchContainer>

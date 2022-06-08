@@ -12,7 +12,6 @@ const Search = () => {
       <Navbar />
       <div
         style={{
-          border: "yellow solid 1px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

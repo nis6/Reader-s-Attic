@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Center, colors } from "../../utilities";
 import { Link } from "react-router-dom";
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   text-decoration: none;
   text-transform: capitalize;
   color: ${colors.grey};

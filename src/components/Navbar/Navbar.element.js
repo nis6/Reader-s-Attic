@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors, defaultTheme } from "../../utilities";
 
 export const NavbarContainer = styled.div`
-  background: ${defaultTheme.bgColor};
+  background: transparent;
   color: ${defaultTheme.textColor};
   height: 7rem;
   width: 100%;
@@ -11,8 +11,6 @@ export const NavbarContainer = styled.div`
   padding-right: 2rem;
   padding-left: 2rem;
   justify-content: space-between;
-
-  border: green solid 1px;
 `;
 export const Blob = styled.div`
   position: absolute;
@@ -51,7 +49,6 @@ export const Button = styled.button`
     opacity: 1;
     transition: all 0.3s ease;
   }
-  z-index: 1000;
 `;
 //  border: solid 1px white;
 //   align-items: flex-end;
