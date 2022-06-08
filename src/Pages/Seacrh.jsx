@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
-import { colors } from "../utilities/Colors.js";
 import Socials from "./../components/socials.jsx";
 import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
@@ -9,14 +8,16 @@ import SearchBar from "../components/SearchBar.jsx";
 
 const Search = () => {
   return (
-    <div>
+    <div style={{}}>
       <Navbar />
       <div
         style={{
+          border: "yellow solid 1px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           top: "8vh",
+          marginTop: "3rem",
         }}
       >
         <SearchComponent>

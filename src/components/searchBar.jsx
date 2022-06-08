@@ -26,7 +26,6 @@ const SearchBar = () => {
         "https://www.googleapis.com/books/v1/volumes?download=epub&key=AIzaSyA9_SHTKmvhIqRiafx82tDuhsRyNSoXckU&q=";
       let param_arr = params.split(" ");
       let final_url = url + param_arr.join("+");
-      console.log(final_url);
       const response = await fetch(final_url);
       console.log("response: ", response);
       console.log("typeof(response): ", typeof response);
@@ -39,7 +38,7 @@ const SearchBar = () => {
               JSON.stringify(item.volumeInfo.title)
             )
           );
-          console.log("books: ", books);
+          console.log("books from async  function: ", books);
         },
         (err) => console.log("Error Occured: ", err)
       );
@@ -75,4 +74,5 @@ const SearchBar = () => {
     </SearchContainer>
   );
 };
+
 export default SearchBar;

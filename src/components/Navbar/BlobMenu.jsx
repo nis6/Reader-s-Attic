@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Center, colors } from "../../utilities";
 import { Link } from "react-router-dom";
 
-const MenuLink = styled(Link)`
+const MenuLink = styled.a`
   text-decoration: none;
   text-transform: capitalize;
   color: ${colors.grey};
@@ -23,15 +23,15 @@ export const Sidebar = () => {
     <Center>
       <div
         style={{
-          display: " grid",
+          display: "grid",
           gridTemplateRows: "1fr 1fr",
           gridTemplateColumns: "1fr 1fr",
-          padding: "3rem",
+          padding: "1rem",
         }}
       >
         <div
           style={{
-            padding: "2rem",
+            padding: "1rem",
             borderRight: `1px solid ${colors.indianred}`,
             textAlign: "right",
           }}
@@ -41,15 +41,15 @@ export const Sidebar = () => {
 
         <div
           style={{
-            padding: "2rem",
+            padding: "1rem",
             borderBottom: `1px solid ${colors.marigold}`,
           }}
         >
-          <MenuLink to="/">Favourites</MenuLink>
+          <MenuLink to="/favourites">Favourites</MenuLink>
         </div>
         <div
           style={{
-            padding: "2rem",
+            padding: "1rem",
             borderTop: `1px solid ${colors.pine}`,
             textAlign: "right",
           }}
@@ -58,7 +58,7 @@ export const Sidebar = () => {
         </div>
         <div
           style={{
-            padding: "2rem",
+            padding: "1rem",
             borderLeft: `1px solid ${colors.oliverhaze}`,
           }}
         >

@@ -3,12 +3,7 @@ import GlobalStyle from "./utilities/Global";
 import Home from "./Pages/Home.jsx";
 import Search from "./Pages/Seacrh.jsx";
 import Fav from "./Pages/Fav.jsx";
-import {
-  BrowserRouter as Router,
-  browserHistory,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -22,5 +17,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;

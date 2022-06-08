@@ -3,6 +3,7 @@ import { defaultTheme } from "../utilities";
 import { home_illustrations } from "../assets";
 
 export const TextContainer = styled.div`
+  border: red 1px solid;
   z-index: -10;
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@ export const TextContainer = styled.div`
   padding-bottom: 3rem;
   @media screen and (max-width: 780px) {
     /* align-self: center;
-    width: 80%;
+     width: 80%;
     height: max-content;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +39,7 @@ export const TextContainer = styled.div`
 `;
 
 export const MainHeader = styled.div`
+  border: red 1px solid;
   z-index: 9;
   font-size: 6rem;
   @media screen and (max-width: 780px) {
@@ -51,6 +53,7 @@ export const MainHeader = styled.div`
   }
 `;
 export const MainText = styled.div`
+  border: red 1px solid;
   z-index: 9;
   font-size: 1.2rem;
   font-family: ${defaultTheme.SecondaryFont};
@@ -64,7 +67,9 @@ export const MainText = styled.div`
   @media screen and (max-width: 380px) {
   }
 `;
+
 export const Illustration = styled.div`
+  border: red 1px solid;
   width: 95vw;
   height: 30rem;
   background-image: url(${home_illustrations.mobile_illustra});
@@ -76,7 +81,6 @@ export const Illustration = styled.div`
     background-image: url(${home_illustrations.tab_illustra});
     margin-left: 0rem;
     width: 100vw;
-    position: static;
     margin-top: 2rem;
   }
   @media (min-width: 800px) {

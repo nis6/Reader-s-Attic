@@ -16,10 +16,11 @@ const Home = () => {
       <Navbar />
       <div
         style={{
+          border: "green solid 1px",
+          marginTop: "8rem",
           display: "flex",
           flexDirection: "column",
           position: "relative",
-          top: "8vh",
         }}
       >
         <TextContainer>

@@ -44,7 +44,10 @@
 
 ### Learnings
 
+- ...
+-
 - On hover - border gives shift effect to elements [added to search bar]
+- z-index only applies to positioned elements.
 - A package root is a directory with a package.json
 - multiple import named import destructured inside { }
 - To use JSX, need to import React from 'react' because under the hood JSX is using React.createElement,
