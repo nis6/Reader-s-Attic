@@ -16,15 +16,19 @@ export default function Results({ books }) {
             No books yet :(
           </h3>
         ) : (
-          books.map((item) => (
-            <ResultCard
-              key={item.id}
-              title={item.volumeInfo.title}
-              author={item.volumeInfo.authors}
-              image={item.volumeInfo.imageLinks.thumbnail}
-              summary={item.volumeInfo.description}
-            />
-          ))
+          books.map((item) => {
+            console.log(item);
+            return (
+              <ResultCard
+                key={item.id}
+                title={item.volumeInfo.title}
+                author={item.volumeInfo.authors}
+                image={item.volumeInfo.imageLinks.thumbnail}
+                summary={item.volumeInfo.description}
+                previewLink={item.volumeInfo.previewLink}
+              />
+            );
+          })
         )
       ) : (
         <h3

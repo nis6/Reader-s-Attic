@@ -11,9 +11,10 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         overflow-x: hidden;
         user-select: none; 
-                @media screen and (min-width: 1000px) {
-    font-size: 16px;
-  }
+        @media screen and (min-width: 1000px) {
+          font-size: 16px;
+        }
+        height: 100%;
     }
     ::-webkit-scrollbar {
     display: none;
@@ -27,10 +28,12 @@ const GlobalStyle = createGlobalStyle`
     pointer-events: none;
 }
     body{
+        position: relative;
         margin:0;
         background: ${defaultTheme.bgColor};
         color: ${defaultTheme.textColor};
-        font-family: ${PrimaryFont};  
+        font-family: ${PrimaryFont};
+        height: 100%;
     }
 `;
 

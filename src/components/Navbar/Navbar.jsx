@@ -1,6 +1,4 @@
 import React from "react";
-import { VscMenu, VscChromeClose } from "react-icons/vsc";
-import { BsBookmarkHeartFill, BsBookmarkHeart } from "react-icons/bs";
 import { IoBookSharp, IoBookOutline } from "react-icons/io5";
 import { BsSun } from "react-icons/bs";
 import { IconContext } from "react-icons";

@@ -92,6 +92,8 @@
 
 - [React App book](https://survivejs.com/react/introduction/)
 - [Embedded Viewer API](https://developers.google.com/books/docs/viewer/developers_guide)
+- [Edit Viewer Canvas](https://developers-dot-devsite-v2-prod.appspot.com/books/docs/viewer/examples/book-simple)
+- [Embedded viewer API into react](https://chsohn15.medium.com/integrating-google-books-embedded-viewer-api-into-a-react-app-a81fde35c14d)
 
 ## Author
 

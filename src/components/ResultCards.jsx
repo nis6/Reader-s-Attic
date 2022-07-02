@@ -1,6 +1,8 @@
 import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import { useState } from "react";
-import styled from "styled-components";
+import PreviewModal from "./PreviewModal";
+import { useMediaQuery } from "@chakra-ui/react";
+
 import {
   ResultsContainer,
   Title,
@@ -12,19 +14,23 @@ import {
 
 function ResultCard(props) {
   const [BookMarked, setBookMarked] = useState(false);
+  const [showPreviewModal, setPreviewModal] = useState(false);
+  const [matches] = useMediaQuery("(max-width: 500px)");
+
   function toggleBookMark() {
     setBookMarked(!BookMarked);
   }
+  function togglePreviewModal() {
+    setPreviewModal(!showPreviewModal);
+  }
   return (
     <ResultsContainer>
-      <Title>
-        <h4>{props.title}</h4>
-      </Title>
+      <Title>{matches ? <h5>{props.title}</h5> : <h4>{props.title}</h4>}</Title>
       <div
         style={{
-          fontSize: "1.3rem",
-          gridRow: "2 / span 2",
-          gridColumn: "1 / span 1",
+          fontSize: matches ? "1rem" : "1.3rem",
+          gridRow: matches ? "2 / span 1" : "2 / span 2",
+          gridColumn: matches ? "1 / span 2" : "1 / span 1",
           alignSelf: "start",
         }}
       >
@@ -35,22 +41,47 @@ function ResultCard(props) {
       <div
         style={{
           padding: "0.5rem",
-          gridRow: "1/ span 3",
-          gridColumn: "2/ span 1",
+          gridRow: matches ? "1/span 2" : "1/ span 3",
+          gridColumn: matches ? "3/ span 2" : "2 / span 1",
         }}
       >
         <img
           src={props.image}
           alt="A little life"
           style={{
-            height: "14rem",
+            height: matches ? "6rem" : "14rem",
             width: "auto",
             boxShadow: `3px 3px 4px 1px rgba(255, 255, 255, 0.4)`,
           }}
         />
       </div>
-      <Summary>{props.summary}</Summary>
-      <Preview>Preview</Preview>
+      <Summary
+        style={{
+          gridRow: matches ? "3/span 2" : "1/span 2",
+          gridColumn: matches ? "1/ span 4" : "3/ span 2",
+        }}
+      >
+        {props.summary}
+      </Summary>
+
+      <Preview
+        style={{
+          width: matches ? "100%" : "50%",
+          gridRow: matches ? "5/span 1" : "3 / span 1",
+          gridColumn: matches ? "1/ span 2" : "3 / span 1",
+        }}
+        onClick={() => togglePreviewModal()}
+      >
+        Preview
+      </Preview>
+      {console.log("showPreviewModal: ", showPreviewModal)}
+      <PreviewModal
+        showModal={showPreviewModal}
+        previewLink={props.previewLink}
+        onClose={() => {
+          setPreviewModal(false);
+        }}
+      />
       {BookMarked ? (
         <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
           <BsBookmarkHeart size="1.8rem" />

@@ -14,6 +14,10 @@ export const ResultsContainer = styled.div`
   border: solid 1px ${colors.ivory100};
   margin: 2rem;
   width: 90%;
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
 `;
 
 export const Title = styled.div`
@@ -21,13 +25,14 @@ export const Title = styled.div`
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   align-self: end;
+  @media (max-width: 500px) {
+    grid-column: 1 / span 2;
+  }
 `;
 
 export const Preview = styled.button`
   align-self: start;
   width: 50%;
-  grid-row: 3 / span 1;
-  grid-column: 3 / span 1;
   background: transparent;
   border: solid 1px ${colors.ivory200};
   border-radius: 0.7rem;
@@ -89,8 +94,6 @@ export const BookmarkButtonFilled = styled.button`
 `;
 
 export const Summary = styled.div`
-  grid-row: 1 / span 2;
-  grid-column: 3 / span 2;
   color: ${colors.ivory200};
   text-align: justify;
   overflow: hidden;
