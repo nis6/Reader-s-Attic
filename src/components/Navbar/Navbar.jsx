@@ -6,7 +6,7 @@ import { NavbarContainer, IconContainer, Blob, Button } from "./Navbar.element";
 import { home_illustrations } from "../../assets";
 import NavLogo from "../Logo.jsx";
 import { Link } from "react-router-dom";
-import { Sidebar } from "./BlobMenu";
+import { BlobMenu } from "./BlobMenu";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Button>
             </IconContext.Provider>
           </IconContainer>
-          {click ? <Sidebar /> : ""}
+          {click ? <BlobMenu /> : ""}
         </Blob>
       </NavbarContainer>
     </div>

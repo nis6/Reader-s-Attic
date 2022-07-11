@@ -18,7 +18,7 @@ const MenuLink = styled(Link)`
   }
 `;
 
-export const Sidebar = () => {
+export const BlobMenu = () => {
   return (
     <Center>
       <div

@@ -78,7 +78,7 @@ function ResultCard(props) {
       <PreviewModal
         showModal={showPreviewModal}
         previewLink={props.previewLink}
-        onClose={() => {
+        ontheClose={() => {
           setPreviewModal(false);
         }}
       />

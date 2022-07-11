@@ -9,6 +9,7 @@ const modalRoot = document.getElementById("modal");
 
 const PreviewContainer = styled.div`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   border: solid 1px whitesmoke;
@@ -20,6 +21,7 @@ const PreviewContainer = styled.div`
 
 export const ButtonDark = styled.button`
   background: transparent;
+  cursor: pointer;
   border: none;
   padding: 0.6rem;
   color: ${colors.night};
@@ -30,21 +32,36 @@ export const ButtonDark = styled.button`
   position: absolute;
   right: 10px;
   top: 10px;
+  z-index: 2000;
 `;
 
-const PreviewModal = ({ previewLink, showModal, onClose }) => {
+export const Overlay = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.3);
+`;
+
+const PreviewModal = ({ previewLink, showModal, ontheClose }) => {
   if (!showModal) {
     console.log("No Modal to be shown!");
     return null;
   }
   console.log("Reached Modal!");
   return ReactDOM.createPortal(
-    <PreviewContainer>
-      <ButtonDark type="submit" onClick={onClose}>
-        <AiFillCloseSquare size="1.8rem" />
-      </ButtonDark>
-      <Viewer bookPreviewLink={previewLink} />
-    </PreviewContainer>,
+    <Overlay>
+      <PreviewContainer>
+        <ButtonDark type="submit" onClick={ontheClose}>
+          <AiFillCloseSquare size="1.8rem" />
+        </ButtonDark>
+        <Viewer bookPreviewLink={previewLink} />
+      </PreviewContainer>
+    </Overlay>,
     modalRoot
   );
 };

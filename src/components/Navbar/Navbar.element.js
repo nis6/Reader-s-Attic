@@ -30,7 +30,6 @@ export const IconContainer = styled.div`
   padding-top: 1rem;
   text-align: end;
   width: 40vw;
-  z-index: 1000;
   @media screen and (min-width: 700px) {
     width: 20vw;
   }
