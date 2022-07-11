@@ -8,7 +8,7 @@
     "format": " prettier --write \"**/*.{js,jsx,json}\" ",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel public/index.html --no-cache --open chrome",
-    "build": "parcel build"
+    "build": "./node_modules/.bin/parcel build ./public/index.html"
   },
   "keywords": [],
   "author": "",
