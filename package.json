@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": " prettier --write \"**/*.{js,jsx,json}\" ",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel public/index.html --no-cache --open chrome"
+    "dev": "parcel public/index.html --no-cache --open chrome",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
