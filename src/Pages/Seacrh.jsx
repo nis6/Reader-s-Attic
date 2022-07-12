@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
+import SearchBar from "./../components/SearchBar.jsx";
 import Socials from "./../components/socials.jsx";
 import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
 import { defaultTheme } from "../utilities/theme.js";
-import SearchBar from "../components/SearchBar.jsx";
 
 const Search = () => {
   return (
