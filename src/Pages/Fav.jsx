@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
 import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
 import { defaultTheme } from "../utilities/theme.js";
