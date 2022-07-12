@@ -8,9 +8,8 @@ import {
   Input,
   SearchButton,
 } from "./SearchBar.elements";
-import ResultCard from "./ResultCards";
 
-const SearchBar = () => {
+export const SearchBar = () => {
   const [params, setParams] = useState("");
   const [books, setBooks] = useState([]);
 
@@ -81,5 +80,3 @@ const SearchBar = () => {
     </SearchContainer>
   );
 };
-
-export default SearchBar;
