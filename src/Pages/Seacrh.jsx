@@ -8,7 +8,7 @@ import SearchBar from "../components/SearchBar.jsx";
 
 const Search = () => {
   return (
-    <div style={{}}>
+    <div>
       <Navbar />
       <div
         style={{
