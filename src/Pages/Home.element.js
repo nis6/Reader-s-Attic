@@ -24,7 +24,7 @@ export const TextContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 450px) {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -38,7 +38,7 @@ export const TextContainer = styled.div`
 
 export const MainHeader = styled.div`
   z-index: 9;
-  font-size: 6rem;
+  font-size: 5rem;
   @media screen and (max-width: 780px) {
     /* margin: 1rem 0;
     flex-basis: 30%; */
@@ -51,7 +51,7 @@ export const MainHeader = styled.div`
 `;
 export const MainText = styled.div`
   z-index: 9;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: ${defaultTheme.SecondaryFont};
   line-height: 190%;
   word-spacing: normal;
@@ -65,7 +65,7 @@ export const MainText = styled.div`
 `;
 
 export const Illustration = styled.div`
-  width: 95vw;
+  width: 85vw;
   height: 30rem;
   background-image: url(${home_illustrations.mobile_illustra});
   background-position: center;
@@ -75,7 +75,7 @@ export const Illustration = styled.div`
   @media (min-width: 700px) {
     background-image: url(${home_illustrations.tab_illustra});
     margin-left: 0rem;
-    width: 100vw;
+    width: 90vw;
     margin-top: 2rem;
   }
   @media (min-width: 800px) {

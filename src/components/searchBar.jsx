@@ -9,7 +9,7 @@ import {
   SearchButton,
 } from "./SearchBar.elements";
 
-export const SearchBar = () => {
+const SearchBar = () => {
   const [params, setParams] = useState("");
   const [books, setBooks] = useState([]);
 
@@ -80,3 +80,5 @@ export const SearchBar = () => {
     </SearchContainer>
   );
 };
+
+export default SearchBar;

@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         user-select: none; 
         @media screen and (min-width: 1000px) {
-          font-size: 16px;
+          font-size: 14px;
         }
         height: 100%;
     }
@@ -48,8 +48,8 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.div`
-  width: 9rem;
-  height: 7rem;
+  width: 7rem;
+  height: 5rem;
   margin-bottom: 0;
   padding: 0;
 `;

@@ -4,7 +4,7 @@ import { colors, defaultTheme } from "../../utilities";
 export const NavbarContainer = styled.div`
   background: transparent;
   color: ${defaultTheme.textColor};
-  height: 7rem;
+  height: 5rem;
   width: 100%;
   display: flex;
   padding-top: 1.5rem;
@@ -29,7 +29,7 @@ export const IconContainer = styled.div`
   padding-right: 1rem;
   padding-top: 1rem;
   text-align: end;
-  width: 40vw;
+  width: 38vw;
   @media screen and (min-width: 700px) {
     width: 20vw;
   }

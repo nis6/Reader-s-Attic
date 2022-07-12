@@ -7,7 +7,7 @@ export const SearchContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 75vw;
 `;
 
 export const SearchBarContainer = styled.div`
@@ -16,7 +16,7 @@ export const SearchBarContainer = styled.div`
   margin-top: 1rem;
   padding: 0.3rem 0.5rem;
   border-radius: 1.3rem;
-  width: 75%;
+  width: 80%;
   &:hover {
     border: solid ${colors.beige100} 1px;
   }
