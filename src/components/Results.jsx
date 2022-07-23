@@ -4,7 +4,14 @@ import { colors } from "../utilities";
 
 export default function Results({ books }) {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       {books ? (
         !books.length ? (
           <h3
@@ -29,7 +36,7 @@ export default function Results({ books }) {
                 author={item.volumeInfo.authors}
                 image={item.volumeInfo.imageLinks.thumbnail}
                 summary={item.volumeInfo.description}
-                ISBN_number={item.volumeInfo.industryIdentifiers[1].identifier}
+                ISBN_number={item.volumeInfo.industryIdentifiers[0].identifier}
               />
             );
           })

@@ -15,7 +15,7 @@ export const ResultsContainer = styled.div`
   margin: 2rem;
   width: 90%;
   @media (max-width: 500px) {
-    width: 95%;
+    width: 90%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
