@@ -1,6 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
-import { useState, useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import Results from "./Results";
 import {
   SearchBarContainer,

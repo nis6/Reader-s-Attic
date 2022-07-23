@@ -24,7 +24,7 @@ export const TextContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     display: flex;
     width: 100%;
     flex-direction: column;

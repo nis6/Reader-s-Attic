@@ -17,7 +17,11 @@ export default function Results({ books }) {
           </h3>
         ) : (
           books.map((item) => {
-            console.log(item);
+            console.log("here is the book info: ", item);
+            console.log(
+              "ISBN number: " +
+                item.volumeInfo.industryIdentifiers[0].identifier
+            );
             return (
               <ResultCard
                 key={item.id}
@@ -25,7 +29,7 @@ export default function Results({ books }) {
                 author={item.volumeInfo.authors}
                 image={item.volumeInfo.imageLinks.thumbnail}
                 summary={item.volumeInfo.description}
-                previewLink={item.volumeInfo.previewLink}
+                ISBN_number={item.volumeInfo.industryIdentifiers[1].identifier}
               />
             );
           })

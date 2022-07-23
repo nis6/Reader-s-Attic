@@ -24,7 +24,7 @@ export const ButtonDark = styled.button`
   cursor: pointer;
   border: none;
   padding: 0.6rem;
-  color: ${colors.night};
+  color: ${colors.indianred};
   &:hover {
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -47,7 +47,7 @@ export const Overlay = styled.div`
   background-color: rgba(128, 128, 128, 0.3);
 `;
 
-const PreviewModal = ({ previewLink, showModal, ontheClose }) => {
+const PreviewModal = ({ ISBN_number, showModal, ontheClose }) => {
   if (!showModal) {
     console.log("No Modal to be shown!");
     return null;
@@ -59,7 +59,7 @@ const PreviewModal = ({ previewLink, showModal, ontheClose }) => {
         <ButtonDark type="submit" onClick={ontheClose}>
           <AiFillCloseSquare size="1.8rem" />
         </ButtonDark>
-        <Viewer bookPreviewLink={previewLink} />
+        <Viewer ISBN_number={ISBN_number} />
       </PreviewContainer>
     </Overlay>,
     modalRoot

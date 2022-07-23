@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 }
     body{
         position: relative;
+        overflow-x: hidden;
         margin:0;
         background: ${defaultTheme.bgColor};
         color: ${defaultTheme.textColor};
