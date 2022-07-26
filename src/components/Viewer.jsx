@@ -14,7 +14,7 @@ const ViewerCanvas = styled.div`
 `;
 
 const Viewer = ({ ISBN_number }) => {
-  const canvasRef = useRef();
+  const canvasRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
