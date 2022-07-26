@@ -5,8 +5,11 @@ import Socials from "./../components/socials.jsx";
 import { home_illustrations } from "../assets/index.js";
 import { SearchComponent } from "./Search.element";
 import { defaultTheme } from "../utilities/theme.js";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const Search = () => {
+  const [matches] = useMediaQuery("(max-width: 500px)");
+  console.log("matches: ", matches);
   return (
     <div>
       <Navbar />
@@ -15,8 +18,8 @@ const Search = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          top: "8vh",
-          marginTop: "3rem",
+          marginTop: matches ? "6rem" : "2rem",
+          border: "red solid 1px",
         }}
       >
         <SearchComponent>

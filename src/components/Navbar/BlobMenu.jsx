@@ -27,6 +27,7 @@ export const BlobMenu = () => {
           gridTemplateRows: "1fr 1fr",
           gridTemplateColumns: "1fr 1fr",
           padding: "1rem",
+          marginBottom: "3rem",
         }}
       >
         <div

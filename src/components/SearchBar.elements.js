@@ -8,6 +8,8 @@ export const SearchContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 95vw;
+  @media (max-width: 500px) {
+  }
 `;
 
 export const SearchBarContainer = styled.div`
@@ -16,9 +18,12 @@ export const SearchBarContainer = styled.div`
   margin-top: 1rem;
   padding: 0.3rem 0.5rem;
   border-radius: 1.3rem;
-  width: 80%;
+  width: 70%;
   &:hover {
     border: solid ${colors.beige100} 1px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 80%;
   }
 `;
 
