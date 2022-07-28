@@ -19,7 +19,6 @@ const Search = () => {
           flexDirection: "column",
           alignItems: "center",
           marginTop: matches ? "6rem" : "2rem",
-          border: "red solid 1px",
         }}
       >
         <SearchComponent>
