@@ -77,7 +77,7 @@ function ResultCard(props) {
       {console.log("showPreviewModal: ", showPreviewModal)}
       <PreviewModal
         showModal={showPreviewModal}
-        ISBN_number={props.ISBN_number}
+        identifier={props.identifier}
         ontheClose={() => {
           setPreviewModal(false);
         }}

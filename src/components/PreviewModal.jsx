@@ -4,19 +4,19 @@ import Viewer from "./Viewer";
 import styled from "styled-components";
 import { colors } from "../utilities";
 import { defaultTheme } from "../utilities/theme";
-
+import { home_illustrations } from "../assets";
 const modalRoot = document.getElementById("modal");
 
 const PreviewContainer = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
-  border: solid 1px whitesmoke;
-  background-color: black;
+  border: solid 1px red;
   width: 80vw;
   height: 94vh;
-  background-color: ${colors.ivory100};
+  background-color: ${colors.beige100};
 `;
 
 export const ButtonDark = styled.button`
@@ -47,7 +47,7 @@ export const Overlay = styled.div`
   background-color: rgba(128, 128, 128, 0.3);
 `;
 
-const PreviewModal = ({ ISBN_number, showModal, ontheClose }) => {
+const PreviewModal = ({ identifier, showModal, ontheClose }) => {
   if (!showModal) {
     console.log("No Modal to be shown!");
     return null;
@@ -56,10 +56,15 @@ const PreviewModal = ({ ISBN_number, showModal, ontheClose }) => {
   return ReactDOM.createPortal(
     <Overlay>
       <PreviewContainer>
+        <img
+          src={home_illustrations.preview}
+          alt="preview"
+          style={{ width: "15%", marginBottom: "1rem" }}
+        />
         <ButtonDark type="submit" onClick={ontheClose}>
           <AiFillCloseSquare size="1.8rem" />
         </ButtonDark>
-        <Viewer ISBN_number={ISBN_number} />
+        <Viewer identifier={identifier} />
       </PreviewContainer>
     </Overlay>,
     modalRoot

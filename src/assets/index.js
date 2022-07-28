@@ -10,6 +10,7 @@ import themestar from "./home/themestar.svg";
 import blob from "./blob.svg";
 import bookShelf from "./bookshelf.svg";
 import bookimg from "./littlelife.jpg";
+import preview from "./preview.svg";
 
 export const home_illustrations = {
   home_illustra,
@@ -18,6 +19,7 @@ export const home_illustrations = {
   logo,
   blob,
   menu,
+  preview,
   themestar,
   github,
   twitter,

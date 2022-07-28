@@ -22,13 +22,13 @@ const LinkSocials = styled(Link)`
 const Socials = () => {
   return (
     <SocialContainer>
-      <LinkSocials to="https://www.linkedin.com/in/nisha-chauhan-31197b17b/s">
+      <LinkSocials to="//www.linkedin.com/in/nis6/">
         <img src={home_illustrations.linkedin} alt="linkedin-logo" />
       </LinkSocials>
-      <LinkSocials to="https://twitter.com/Nishachauhanr">
+      <LinkSocials to="//twitter.com/Nishachauhanr">
         <img src={home_illustrations.twitter} alt="twitter-logo" />
       </LinkSocials>
-      <LinkSocials to="https://github.com/nis6">
+      <LinkSocials to="//github.com/nis6">
         <img src={home_illustrations.github} alt="github-logo" />
       </LinkSocials>
     </SocialContainer>
