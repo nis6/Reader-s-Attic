@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from "../utilities";
 import { useRef } from "react";
 import { useEffect, useState } from "react/cjs/react.development";
+import React from "react";
 
 const ViewerCanvas = styled.div`
   width: 75vw;
@@ -29,32 +30,16 @@ const Viewer = ({ identifier }) => {
     scriptTag.addEventListener("load", () => setLoaded(true));
   }, []);
 
-  // useEffect(() => {
-  //   if (!loaded) return;
-  //   else {
-  //     google.books.load();
-
-  //     google.books.setOnLoadCallback(() => {
-  //       var viewer = new google.books.DefaultViewer(canvasViewer.current);
-  //       viewer.load(previewLink, alertNotFound);
-  //     });
-  //   }
-  // }, [loaded]);
-
   useEffect(() => {
     if (!loaded) return;
     else {
       if (window.viewer) {
-        let viewer = new window.google.books.DefaultViewer(
-          canvasViewer.current
-        );
+        let viewer = new window.google.books.DefaultViewer(canvasViewer.current);
         viewer.load("ISBN:" + identifier, alertNotFound);
       } else {
         window.google.books.load();
         window.google.books.setOnLoadCallback(() => {
-          let viewer = new window.google.books.DefaultViewer(
-            canvasViewer.current
-          );
+          let viewer = new window.google.books.DefaultViewer(canvasViewer.current);
           window.viewer = viewer;
           viewer.load("ISBN:" + identifier, alertNotFound);
         });
@@ -68,7 +53,6 @@ const Viewer = ({ identifier }) => {
 
   return (
     <div>
-      {console.log("render")}
       {loaded ? (
         <ViewerCanvas>
           <div
@@ -80,9 +64,7 @@ const Viewer = ({ identifier }) => {
           </div>
         </ViewerCanvas>
       ) : (
-        <div
-          style={{ width: "75vw", height: "80vh", backgroundColor: "black" }}
-        >
+        <div style={{ width: "75vw", height: "80vh", backgroundColor: "black" }}>
           empty
         </div>
       )}

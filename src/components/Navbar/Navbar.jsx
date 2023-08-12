@@ -16,13 +16,25 @@ const Navbar = () => {
     setClick(!click);
   }
 
+  const handleBlur = () => {
+    setTimeout(() => {
+      if (!document.hasFocus()) {
+        setClick(false);
+      }
+    }, 0);
+  };
+
+  const handleFocus = () => {
+    setClick(true);
+  };
+
   return (
     <div>
       <NavbarContainer>
         <Link to="/">
           <NavLogo />
         </Link>
-        <Blob>
+        <Blob onBlur={handleBlur} onFocus={handleFocus}>
           <img
             src={home_illustrations.blob}
             alt="blob"
@@ -34,9 +46,6 @@ const Navbar = () => {
           />
           <IconContainer>
             <IconContext.Provider value={{ size: "2rem", strokeWidth: "0.3" }}>
-              {/* <Button> 
-                  <BsBookmarkHeartFill size="2rem" />
-                </Button> */}
               <Button onClick={() => toggleMenu()}>
                 {click ? <IoBookOutline /> : <IoBookSharp />}
               </Button>

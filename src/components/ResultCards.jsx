@@ -1,8 +1,8 @@
+// @ts-nocheck
 import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import { useState } from "react";
 import PreviewModal from "./PreviewModal";
 import { useMediaQuery } from "@chakra-ui/react";
-
 import {
   ResultsContainer,
   Title,
@@ -11,6 +11,7 @@ import {
   BookmarkButton,
   BookmarkButtonFilled,
 } from "./ResultCards.elements";
+import React from "react";
 
 function ResultCard(props) {
   const [BookMarked, setBookMarked] = useState(false);
@@ -71,6 +72,7 @@ function ResultCard(props) {
           gridColumn: matches ? "1/ span 2" : "3 / span 1",
         }}
         onClick={() => togglePreviewModal()}
+        onBlur={() => togglePreviewModal()}
       >
         Preview
       </Preview>
@@ -82,7 +84,7 @@ function ResultCard(props) {
           setPreviewModal(false);
         }}
       />
-      {BookMarked ? (
+      {!BookMarked ? (
         <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
           <BsBookmarkHeart size="1.8rem" />
         </BookmarkButton>
@@ -96,20 +98,3 @@ function ResultCard(props) {
 }
 
 export default ResultCard;
-
-// const [BookMarked, setBookMarked] = useState(fasle);
-// function toggleBookMark() {
-//   setBookMarked(!BookMarked);
-// }
-
-//  {
-//    BookMarked ? (
-//      <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
-//        <BsBookmarkHeart size="1.8rem" />
-//      </BookmarkButton>
-//    ) : (
-//      <BookmarkButton type="submit" onClick={() => toggleBookMark()}>
-//        <BsBookmarkHeartFill size="1.8rem" />
-//      </BookmarkButton>
-//    );
-//  }

@@ -3,7 +3,6 @@ import { AiFillCloseSquare } from "react-icons/ai";
 import Viewer from "./Viewer";
 import styled from "styled-components";
 import { colors } from "../utilities";
-import { defaultTheme } from "../utilities/theme";
 import { home_illustrations } from "../assets";
 const modalRoot = document.getElementById("modal");
 
